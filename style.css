@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background: #1c3820;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.jogo {
+  width: 100%;
+  max-width: 600px;
+}
+
+.titulo {
+  font-size: 1.6rem;
+  margin: 0 0 24px;
+}
+
+.passo {
+  display: none;
+}
+
+.passo.ativo {
+  display: block;
+}
+
+.passo p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.escolhas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.btn-proximo {
+  font-family: inherit;
+  font-size: 1rem;
+  color: #1a1a1a;
+  background: #f2f2f2;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+}
+
+.btn-proximo:hover {
+  background: #dddddd;
+}

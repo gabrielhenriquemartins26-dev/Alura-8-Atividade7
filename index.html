@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Cidade Perdida</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="jogo">
+    <h1 class="titulo">A Cidade Perdida</h1>
+
+
+    <section id="passo-inicio" class="passo ativo">
+      <p>Recentemente, encontrei um livro antigo na biblioteca da escola com uma carta guardada dentro dele. A carta fala sobre uma cidade perdida, cheia de tesouros e cercada por paisagens incríveis, e traz algumas dicas de como chegar até lá. Resolvi seguir essas dicas.</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="rio-tijuca">Rio de Janeiro</button>
+        <button class="btn-proximo" data-proximo="pernambuco">Pernambuco</button>
+      </div>
+    </section>
+
+
+    <section id="passo-rio-tijuca" class="passo">
+      <p>Sua busca começa no Rio de Janeiro. Logo cedo, você sobe até o topo do Pico da Tijuca para procurar a primeira dica deixada na carta.</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="rio-inscricao">Procurar a pista no topo do pico</button>
+        <button class="btn-proximo" data-proximo="fim-desistiu">Desistir e voltar para casa</button>
+      </div>
+    </section>
+
+
+    <section id="passo-pernambuco" class="passo">
+      <p>Sua busca começa em Pernambuco, na cidade histórica de Olinda. A carta diz que a entrada para a cidade perdida está ligada a um dos pontos turísticos do lugar. Por onde você prefere procurar?</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="pernambuco-igrejas">Investigar as igrejas antigas</button>
+        <button class="btn-proximo" data-proximo="pernambuco-praias">Explorar as praias próximas</button>
+      </div>
+    </section>
+
+
+    <section id="passo-rio-inscricao" class="passo">
+      <p>No alto do pico, você encontra uma inscrição desgastada pelo tempo. Ela indica que a próxima dica está bem longe dali, no Amazonas.</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="amazonas">Seguir para o Amazonas</button>
+      </div>
+    </section>
+
+
+    <section id="passo-fim-desistiu" class="passo final">
+      <p>A viagem parece longa demais e você decide voltar para casa. No caminho, não para de imaginar o que teria descoberto se tivesse continuado.</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="inicio">Jogar novamente</button>
+      </div>
+    </section>
+
+
+    <section id="passo-pernambuco-igrejas" class="passo">
+      <p>Andando pelas igrejas antigas de Olinda, você repara em um mapa desenhado à mão, escondido atrás de um dos altares. Ele aponta o Amazonas como o próximo destino.</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="amazonas">Seguir para o Amazonas</button>
+      </div>
+    </section>
+
+
+    <section id="passo-pernambuco-praias" class="passo">
+      <p>Nas praias próximas, você encontra uma caverna escondida entre as pedras. Depois de explorá-la, percebe que ela não leva a lugar nenhum.</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="pernambuco-igrejas-retorno">Voltar e explorar as igrejas</button>
+      </div>
+    </section>
+
+ 
+    <section id="passo-pernambuco-igrejas-retorno" class="passo">
+      <p>De volta ao centro histórico, você entra nas igrejas antigas e, dessa vez, encontra o mapa escondido atrás do altar. Ele mostra o caminho até o Amazonas.</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="amazonas">Seguir para o Amazonas</button>
+      </div>
+    </section>
+
+ 
+    <section id="passo-amazonas" class="passo">
+      <p>Já no Amazonas, a busca fica mais intensa. Seguindo o mapa, você chega a um ponto em que o rio se divide em dois caminhos.</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="rio-esquerda">Seguir pelo rio à esquerda</button>
+        <button class="btn-proximo" data-proximo="rio-direita">Seguir pelo rio à direita</button>
+      </div>
+    </section>
+
+   
+    <section id="passo-rio-esquerda" class="passo">
+      <p>Pelo braço esquerdo do rio, você encontra uma cachoeira escondida na mata. Atrás da água, há inscrições antigas que marcam a entrada da cidade perdida.</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="fim-sucesso">Explorar a cidade perdida</button>
+      </div>
+    </section>
+
+  
+    <section id="passo-rio-direita" class="passo">
+      <p>Pelo braço direito do rio, você chega a uma área alagada, cheia de vegetação. A paisagem é linda, mas não há nenhum sinal da cidade perdida por ali.</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="rio-esquerda-retorno">Voltar e tentar o outro caminho</button>
+      </div>
+    </section>
+
+    <section id="passo-rio-esquerda-retorno" class="passo">
+      <p>Você retorna e segue pelo outro braço do rio. Dessa vez encontra a cachoeira escondida, com as inscrições que indicam a entrada da cidade perdida.</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="fim-sucesso">Explorar a cidade perdida</button>
+      </div>
+    </section>
+
+    <section id="passo-fim-sucesso" class="passo final">
+      <p>Dentro da cidade perdida, você se depara com tesouros que nunca imaginou existir. Encantado com a descoberta, decide se dedicar a estudar e preservar aquele lugar.</p>
+      <div class="escolhas">
+        <button class="btn-proximo" data-proximo="inicio">Jogar novamente</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
